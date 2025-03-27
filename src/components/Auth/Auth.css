@@ -1,0 +1,319 @@
+/* .auth-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .left-panel {
+    flex: 7;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1502086223501-7ea6ecd79368');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .left-panel .logo {
+    margin-bottom: 5rem;
+  }
+  
+  .left-panel h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .left-panel p {
+    font-size: 1rem;
+    max-width: 80%;
+  }
+  
+  .right-panel {
+    flex: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  }
+  
+  .login-form {
+    width: 400px;
+    padding: 2rem;
+  }
+  
+  .login-form h4 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .login-form h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+    font-size: 1.75rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .form-options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    align-items: center;
+  }
+  
+  .form-options a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .btn-login, .btn-signup {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #e53935;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .btn-signup {
+    background-color: white;
+    color: #e53935;
+    border: 1px solid #e53935;
+  }
+  
+  .or-divider {
+    text-align: center;
+    margin: 1rem 0;
+    color: #777;
+  }
+   */
+
+/* 
+   .auth-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .left-panel {
+    flex: 1;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1502086223501-7ea6ecd79368');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+   */
+
+   .auth-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .left-panel {
+    flex: 3; /* Change from flex: 1 to flex: 3 for 75% width */
+    background: url('https://images.unsplash.com/photo-1502086223501-7ea6ecd79368');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .right-panel {
+    flex: 1; /* Keep as flex: 1 for 25% width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  }
+  
+  .left-panel .logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+  
+  .left-panel .logo img {
+    height: 50px;
+    margin-right: 15px;
+  }
+  
+  .left-panel h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .left-panel h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .left-panel p {
+    font-size: 1rem;
+    max-width: 80%;
+  }
+  
+  .right-panel {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  }
+  
+  .login-form {
+    width: 400px;
+    padding: 2rem;
+  }
+  
+  .login-form h4 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .login-form h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+    font-size: 1.75rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .form-options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    align-items: center;
+  }
+  
+  .form-options a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .remember-me {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .remember-me input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    height: 18px;
+    width: 18px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 8px;
+    display: inline-block;
+  }
+  
+  .remember-me input:checked ~ .checkmark {
+    background-color: #e53935;
+    border-color: #e53935;
+  }
+  
+  .btn-login {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #e53935;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .divider {
+    position: relative;
+    text-align: center;
+    margin: 1.5rem 0;
+  }
+  
+  .divider:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #eee;
+  }
+  
+  .divider span {
+    position: relative;
+    background-color: white;
+    padding: 0 10px;
+    color: #777;
+  }
+  
+  .btn-create-account {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: white;
+    color: #e53935;
+    border: 1px solid #e53935;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  

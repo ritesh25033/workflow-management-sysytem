@@ -1,0 +1,128 @@
+.workflow-container {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+  }
+  
+  .workflow-container h1 {
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  .workflow-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .workflow-header input {
+    flex: 1;
+    max-width: 400px;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .workflow-header button {
+    padding: 0.75rem 1.5rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .workflow-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .workflow-table th {
+    text-align: left;
+    padding: 1rem;
+    border-bottom: 2px solid #eee;
+    color: #555;
+  }
+  
+  .workflow-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .status-indicator {
+    display: inline-block;
+    margin-right: 0.5rem;
+  }
+  
+  .status-indicator.active {
+    color: gold;
+  }
+  
+  .status-indicator.inactive {
+    color: blue;
+  }
+  
+  .btn-execute, .btn-edit {
+    padding: 0.5rem 1rem;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .btn-more, .btn-download {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.25rem;
+  }
+  
+  /* WorkflowEditor styles */
+  .workflow-editor-container {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+  }
+  
+  .editor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .editor-actions button {
+    padding: 0.75rem 1.5rem;
+    margin-left: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn-save {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+  }
+  
+  .btn-cancel {
+    background-color: white;
+    border: 1px solid #ddd;
+  }
+  
+  .editor-details {
+    margin-bottom: 2rem;
+  }
+  
+  .flow-container {
+    height: 70vh;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
