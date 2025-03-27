@@ -1,63 +1,77 @@
-Step 1: Setup and Planning
-Project Setup:
+# Workflow Management System
 
-Create a new React project using Create React App (CRA) or Vite.
+## 📌 Overview
+The **Workflow Management System** is a frontend-based application that allows users to create, edit, and visualize workflows using a flowchart editor. It integrates **React Flow** for workflow visualization, supports user authentication, and provides essential workflow management functionalities.
 
-Install necessary dependencies like react-router-dom for routing and axios for API calls.
+## 🚀 Features
+- **User Authentication** (Login system)
+- **Workflow Listing** with search and status indicators
+- **Workflow Editor** with flowchart capabilities
+- **API Integration** for saving and loading workflows
+- **Interactive Drag & Drop** functionality
+- **Node & Edge Management** (Add, Remove, Connect nodes)
+- **State Persistence** for workflows
+- **UI Enhancements** with CSS and responsive design
 
-Authentication Setup:
+## 🛠️ Tech Stack
+- **Frontend:** React.js, React Flow, React Router
+- **Backend:** Node.js, Express (For API Integration)
+- **State Management:** React Hooks
+- **Styling:** CSS / Bootstrap / MUI (as applicable)
 
-Choose an authentication method (e.g., Firebase Authentication or a simple JWT-based login).
+## 📂 Folder Structure
+```
+workflow-management-system/
+│-- public/
+│-- src/
+│   │-- components/
+│   │   │-- WorkflowEditor.js
+│   │   │-- WorkflowList.js
+│   │-- services/
+│   │   │-- api.js
+│   │-- styles/
+│   │-- App.js
+│   │-- index.js
+│-- package.json
+│-- README.md
+```
 
-Implement basic login functionality with form validation and authentication logic.
+## 🏗️ Setup & Installation
+### 1️⃣ Clone the Repository
+```sh
+git clone https://github.com/your-username/workflow-management.git
+cd workflow-management
+```
+### 2️⃣ Install Dependencies
+```sh
+npm install
+```
+### 3️⃣ Start the Development Server
+```sh
+npm start
+```
+The application will run on `http://localhost:3000/`
 
-Review Figma Design:
+## 🔗 API Endpoints
+| Method | Endpoint         | Description           |
+|--------|----------------|-----------------------|
+| GET    | /workflows      | Fetch all workflows  |
+| POST   | /workflows      | Create new workflow  |
+| GET    | /workflows/:id  | Fetch workflow by ID |
+| PUT    | /workflows/:id  | Update workflow      |
+| DELETE | /workflows/:id  | Delete workflow      |
 
-Identify UI components needed for the workflow listing and editor.
+## 📸 Screenshots
+![Workflow Editor Screenshot](https://via.placeholder.com/800x400)
 
-Plan how to implement these components in React.
+## 🛠️ Troubleshooting
+- **React Flow Errors?** Ensure you are using the latest version of `react-flow-renderer`.
+- **Styles Not Loading?** Check if CSS files are correctly imported.
+- **Backend Issues?** Make sure API URLs are correctly set in `services/api.js`.
 
-Flowchart Library Selection:
+## 🙌 Contributing
+Feel free to open issues or contribute by submitting pull requests!
 
-Choose a suitable flowchart library such as React Flow or JointJS.
+## 📜 License
+This project is licensed under the MIT License.
 
-Consider the features needed for the workflow editor (e.g., drag-and-drop, node customization).
-
-API Integration:
-
-Set up API integration using the mock APIs provided by Beeceptor.
-
-Define API endpoints for workflow listing, creation, and editing.
-
-Step 2: Implement Core Features
-User Authentication
-Login Form: Create a basic login form with input fields for username and password.
-
-Validation: Implement form validation to ensure valid input.
-
-Authentication Logic: Use the chosen authentication method to authenticate users.
-
-Workflow Listing
-API Call: Fetch workflows from the mock API.
-
-Search Functionality: Implement a search bar to filter workflows by name or description.
-
-Status Indicators: Display status indicators (e.g., active, completed) for each workflow.
-
-Workflow Editor
-Flowchart Integration: Integrate the chosen flowchart library into the editor.
-
-Node and Link Management: Allow users to add, remove, and connect nodes.
-
-Save and Load Workflows: Implement functionality to save and load workflows from the API.
-
-Step 3: UI & State Management
-State Management
-Context API or Zustand: Use a state management library to handle global state (e.g., user authentication status, workflow data).
-
-Redux or MobX: Alternatively, consider using Redux or MobX for more complex state management needs.
-
-UI Responsiveness and Theme Consistency
-CSS Framework: Use a CSS framework like Tailwind CSS or Material UI to ensure responsiveness and theme consistency with the Figma design.
-
-Responsive Components: Ensure all UI components are responsive and work well on different screen sizes.
